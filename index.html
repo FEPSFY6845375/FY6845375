@@ -180,12 +180,34 @@ classifier confidence to drop, as in Vlachos (2008).
    
             <p id="date&time"></p>
 
+           
    <script>
       //Javacriptto display the date and time on my webpage
 
-      const d = new Date();
+      const d=new Date();
       document.getElementByld("date&time").innerHTML = d;
 
    </script>
+<!DOCTYPE html>
+   <html>
+      <head>
+         <title>Change Button Colour</title>
+      </head>
+   <script>
+      // Get a reference to the button element
+      var button = document.getElemenetByld("colorButton");
 
-           
+      // Function to change the button color
+      function changeColor(){
+         // Generate a random color (hecadeciaml)
+         var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+
+         // Set the button's background color to the random color
+         button.style.backgroundColor = randomColor;
+      }
+
+         // Add a click event listener to the button
+         button.addEventListener("click", changeColor);
+   </script>
+   </body>
+   </html>
