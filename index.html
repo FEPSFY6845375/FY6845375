@@ -288,6 +288,7 @@ document.getElementById("date&time").innerHTML = d;
  // Function to show a specific slide based on the button clicked
  function showSlideNumber(slideNumber) {
   currentSlide = slideNumber - 1;
+  showSlide();
  }
  // Call showSlide() to display the first slide
  showSlide();
@@ -303,7 +304,13 @@ document.getElementById("date&time").innerHTML = d;
   <button class="button" onclick="showSlideNumber(4)">4</button>
  </div>
  <style>
- /* Style to centre the image */
+  /* Style to center the image */
+  #slide-container {
+   text-align: center;
+   position: relative;
+  }
+  
+ /* Style for the buttons */
   .button-container {
    position: absolute;
    bottom: 0;
